@@ -5,23 +5,23 @@ import logging
 from logging.handlers import RotatingFileHandler
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6601011494:AAGMR0i5tlCKITms_7rr2LzZmmAieD_eQ58")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6906284605:AAH5aIe4qHCToQnUyG-sCI497PPxYdJys_Y")
 # TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "5872747581:AAH7_XPCOCEVfbgUhepjJWlcOmj8wjDTjBk")
 
 #Your API ID from my.telegram.org
-APP_ID = int(os.environ.get("APP_ID", "3393749"))
+APP_ID = int(os.environ.get("APP_ID", "1522127"))
 
 #Your API Hash from my.telegram.org
-API_HASH = os.environ.get("API_HASH", "a15a5954a1db54952eebd08ea6c68b71")
+API_HASH = os.environ.get("API_HASH", "1252ffe16baf341bfd7236f92df76b0e")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001693231644"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002079130140"))
 
 #Your log channel Id
-LOG_ID = int(os.environ.get("LOG_ID", "-1001881799737"))
+LOG_ID = int(os.environ.get("LOG_ID", "-1002134291959"))
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "1061576483"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "1006159057"))
 
 # #shortenr
 # API = environ.get('API','eedc409c6457b8c783019e990dde8fd531b58eca')
@@ -29,11 +29,11 @@ OWNER_ID = int(os.environ.get("OWNER_ID", "1061576483"))
 PORT = os.environ.get("PORT", "8080")
 
 #Database 
-DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://Jayanna:Jayanna2023@yash.tm1c2bd.mongodb.net/?retryWrites=true&w=majority")
-DB_NAME = os.environ.get("DATABASE_NAME", "New_Divya_Spandana")
+DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://dd:dd@dd.wfuv3f3.mongodb.net/?retryWrites=true&w=majority")
+DB_NAME = os.environ.get("DATABASE_NAME", "Files")
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "0"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002037461526"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "20"))
 
@@ -41,7 +41,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "20"))
 START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link.")
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "1365052525 5963138883").split()):
+    for x in (os.environ.get("ADMINS", "1006159057").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
